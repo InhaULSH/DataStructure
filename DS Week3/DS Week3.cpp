@@ -7,7 +7,7 @@ struct Node {
 };
 
 class ListStack {
-public :
+public:
 	ListStack() {
 		this->TopNode = new Node;
 		TopNode->Data = 0;
@@ -46,7 +46,7 @@ public :
 			SizeOfStack--;
 		}
 	}
-private :
+private:
 	Node* TopNode;
 	int SizeOfStack;
 };
