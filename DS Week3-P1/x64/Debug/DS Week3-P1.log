@@ -1,0 +1,4 @@
+﻿  DS Week3-P1.cpp
+C:\Users\이상호\Downloads\Code\Visual Studio\DS\DS Week3-P1\DS Week3-P1.cpp(27,1): warning C4305: 'return': 'int'에서 'char'(으)로 잘립니다.
+C:\Users\이상호\Downloads\Code\Visual Studio\DS\DS Week3-P1\DS Week3-P1.cpp(27,11): warning C4309: 'return': 상수 값이 잘립니다.
+  DS Week3-P1.vcxproj -> C:\Users\이상호\Downloads\Code\Visual Studio\DS\DS Week3-P1\x64\Debug\DS Week3-P1.exe
