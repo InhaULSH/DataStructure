@@ -6,7 +6,7 @@ struct Node {
 	int Element;
 	Node* Next;
 	Node* Prev;
-};
+}; // 이중 연결 리스트 구현을 위한 노드 구조체
 
 class List {
 public:
@@ -48,14 +48,12 @@ public:
 	int Max(int Size) {
 		int* DataList = new int[Size];
 		Begin();
-
 		for (int i = 0; i < Size; i++) {
 			DataList[i] = Iterator->Element;
 			NextP();
 		}
-
-		return *std::max_element(DataList, DataList + Size);
-	}
+		return *std::max_element(DataList, DataList + Size) - *std::min_element(DataList, DataList + Size);
+	} // 반복자가 Head 노드의 다음 노드부터 순차적으로 순회하면서 데이터 값의 리스트를 작성, 라이브러리를 통해 최댓값과 최솟값 차를 구함
 private:
 	Node* Head; // Head 노드
 	Node* Trailer; // Trailer 노드
@@ -76,8 +74,8 @@ int main() {
 			int TempValue;
 			std::cin >> TempValue;
 			List2.Insert(TempValue);
-		}
+		} // 리스트 크기만큼 값을 입력 받아 리스트에 삽입
 
-		std::cout << List2.Max(SizeOfList) << std::endl;
+		std::cout << List2.Max(SizeOfList) << std::endl; // 최대 최솟값 차이 출력
 	}
 }
