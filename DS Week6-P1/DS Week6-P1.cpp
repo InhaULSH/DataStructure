@@ -1,6 +1,5 @@
 ﻿#include <iostream>
 #include <vector>
-#include <algorithm>
 
 class Node {
 	int Element;
