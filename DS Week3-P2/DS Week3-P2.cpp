@@ -1,20 +1,85 @@
-﻿// DS Week3-P2.cpp : 이 파일에는 'main' 함수가 포함됩니다. 거기서 프로그램 실행이 시작되고 종료됩니다.
-//
+﻿#include <iostream>
+#include <string>
 
-#include <iostream>
+struct Node {
+	char Data;
+	Node* Next;
+}; // 연결리스트 구현을 위한 노드
 
-int main()
-{
-    std::cout << "Hello World!\n";
+class ListStack {
+public:
+	ListStack() {
+		this->TopNode = new Node;
+		TopNode->Next = NULL;
+		this->SizeOfStack = 0;
+	} // 생성자
+	bool isEmpty() {
+		return SizeOfStack == 0;
+	} // 스택이 비었는지 출력하는 함수
+	void Size() {
+		std::cout << SizeOfStack << std::endl;
+	} // 스택의 크기 출력 함수
+	char Top() {
+		if (SizeOfStack == 0) {
+			std::cout << "Empty" << std::endl;
+		}
+		else {
+		return TopNode->Data;
+		}
+	} // 스택의 맨 윗 값 출력함수
+	void Push(const char& Value) {
+		Node* NewNode = new Node;
+		NewNode->Data = Value;
+		NewNode->Next = TopNode;
+		TopNode = NewNode;
+		SizeOfStack++;
+	} // 값 추가 함수
+	void Pop() {
+		if (SizeOfStack == 0) {
+			std::cout << "Empty" << std::endl;
+		}
+		else {
+			Node* TempNode = TopNode;
+			std::cout << TopNode->Data;
+			TopNode = TopNode->Next;
+			delete TempNode;
+			SizeOfStack--;
+		}
+	} // 값 삭제 함수
+private:
+	Node* TopNode;
+	int SizeOfStack;
+}; // 연결리스트로 구현한 스택 클래스
+
+int main() {
+	int Counter;
+	std::cin >> Counter;
+
+	for (int i = 0; i < Counter; i++) {
+		ListStack Stack3;
+		std::string Formula;
+		std::cin >> Formula;
+
+		for (int j = 0; j < Formula.length(); j++) {
+			if (Formula[j] == '/' || Formula[j] == '*') {
+				while (!Stack3.isEmpty() && (Stack3.Top() == '/' || Stack3.Top() == '*')) {
+					Stack3.Pop();
+				}
+				Stack3.Push(Formula[j]);
+			}
+			else if (Formula[j] == '+' || Formula[j] == '-') {
+				while (!Stack3.isEmpty()) {
+					Stack3.Pop();
+				}
+				Stack3.Push(Formula[j]);
+			}
+			else {
+				std::cout << Formula[j];
+			}
+		}
+		while (!Stack3.isEmpty()) {
+			Stack3.Pop();
+		}
+		std::cout << std::endl;
+	}
 }
-
-// 프로그램 실행: <Ctrl+F5> 또는 [디버그] > [디버깅하지 않고 시작] 메뉴
-// 프로그램 디버그: <F5> 키 또는 [디버그] > [디버깅 시작] 메뉴
-
-// 시작을 위한 팁: 
-//   1. [솔루션 탐색기] 창을 사용하여 파일을 추가/관리합니다.
-//   2. [팀 탐색기] 창을 사용하여 소스 제어에 연결합니다.
-//   3. [출력] 창을 사용하여 빌드 출력 및 기타 메시지를 확인합니다.
-//   4. [오류 목록] 창을 사용하여 오류를 봅니다.
-//   5. [프로젝트] > [새 항목 추가]로 이동하여 새 코드 파일을 만들거나, [프로젝트] > [기존 항목 추가]로 이동하여 기존 코드 파일을 프로젝트에 추가합니다.
-//   6. 나중에 이 프로젝트를 다시 열려면 [파일] > [열기] > [프로젝트]로 이동하고 .sln 파일을 선택합니다.

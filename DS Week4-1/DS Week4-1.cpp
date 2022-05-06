@@ -10,7 +10,7 @@ public :
 		for (int i = 0; i < Capacity; i++) {
 			Que[i] = 0;
 		} // 값을 0으로 초기화
-	} // 생성자 
+	} // 생성자
 	void size() {
 		std::cout << (Rear - Front + Capacity)%Capacity << std::endl;
 	} // 큐의 크기 출력함수
@@ -47,8 +47,8 @@ public :
 			std::cout << "Empty" << std::endl;
 		}
 		else {
-			Front = (Front + 1)%Capacity;
 			Que[Front] = 0;
+			Front = (Front + 1)%Capacity;			
 		}
 	} // 값 삭제 함수, Front 다음 값을 Front로 만들고 Front가 있던 자리는 0으로 초기화, 비었다면 "Empty"라고 출력
 private :
