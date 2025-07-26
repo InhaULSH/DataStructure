@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\\uC774\uC0C1\uD638\\Downloads\\Code\\DataStructure\\OS TermProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AF48B24E-5990-4779-B913-B0247392A5F0}|OS TermProject.vcxproj|C:\\Users\\\uC774\uC0C1\uD638\\Downloads\\Code\\DataStructure\\OS TermProject\\ResourceOrdering.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AF48B24E-5990-4779-B913-B0247392A5F0}|OS TermProject.vcxproj|solutionrelative:ResourceOrdering.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF48B24E-5990-4779-B913-B0247392A5F0}|OS TermProject.vcxproj|C:\\Users\\\uC774\uC0C1\uD638\\Downloads\\Code\\DataStructure\\OS TermProject\\RequestAllResources.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AF48B24E-5990-4779-B913-B0247392A5F0}|OS TermProject.vcxproj|solutionrelative:RequestAllResources.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF48B24E-5990-4779-B913-B0247392A5F0}|OS TermProject.vcxproj|C:\\Users\\\uC774\uC0C1\uD638\\Downloads\\Code\\DataStructure\\OS TermProject\\BankersAlgorithm.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AF48B24E-5990-4779-B913-B0247392A5F0}|OS TermProject.vcxproj|solutionrelative:BankersAlgorithm.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ResourceOrdering.cpp",
+              "DocumentMoniker": "C:\\Users\\\uC774\uC0C1\uD638\\Downloads\\Code\\DataStructure\\OS TermProject\\ResourceOrdering.cpp",
+              "RelativeDocumentMoniker": "ResourceOrdering.cpp",
+              "ToolTip": "C:\\Users\\\uC774\uC0C1\uD638\\Downloads\\Code\\DataStructure\\OS TermProject\\ResourceOrdering.cpp",
+              "RelativeToolTip": "ResourceOrdering.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-15T14:04:39.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RequestAllResources.cpp",
+              "DocumentMoniker": "C:\\Users\\\uC774\uC0C1\uD638\\Downloads\\Code\\DataStructure\\OS TermProject\\RequestAllResources.cpp",
+              "RelativeDocumentMoniker": "RequestAllResources.cpp",
+              "ToolTip": "C:\\Users\\\uC774\uC0C1\uD638\\Downloads\\Code\\DataStructure\\OS TermProject\\RequestAllResources.cpp",
+              "RelativeToolTip": "RequestAllResources.cpp",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAEQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-15T14:07:25.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BankersAlgorithm.cpp",
+              "DocumentMoniker": "C:\\Users\\\uC774\uC0C1\uD638\\Downloads\\Code\\DataStructure\\OS TermProject\\BankersAlgorithm.cpp",
+              "RelativeDocumentMoniker": "BankersAlgorithm.cpp",
+              "ToolTip": "C:\\Users\\\uC774\uC0C1\uD638\\Downloads\\Code\\DataStructure\\OS TermProject\\BankersAlgorithm.cpp",
+              "RelativeToolTip": "BankersAlgorithm.cpp",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAGsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-15T13:54:48.944Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
